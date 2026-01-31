@@ -1,4 +1,31 @@
 
+  # DriveXBackup Standalone — Installation Guide
+
+  This guide installs **DriveXBackup** on a Pterodactyl panel **without Blueprint**.
+  The installer patches the panel, builds assets, and clears caches automatically.
+
+  ---
+
+  ## Requirements
+
+  - Pterodactyl Panel installed
+  - Root access (or sudo)
+  - Internet access (installer may install Node.js + Yarn if missing)
+
+  The installer will auto‑install:
+  - `rsync`, `python3`, `nodejs`, `yarn` (if not already installed)
+
+  ---
+
+  ## Download
+
+  Download the latest `drivexbackup-standalone.zip` release from this repo.
+
+  ---
+
+  ## Install
+
+  ```bash
   # Example: extract to /tmp and install into /var/www/pterodactyl
   unzip -o drivexbackup-standalone.zip -d /tmp/drivexbackup
   bash /tmp/drivexbackup/drivexbackup/install.sh /var/www/pterodactyl
